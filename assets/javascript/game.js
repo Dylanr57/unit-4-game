@@ -39,7 +39,14 @@ $(document).ready(function() {
         console.log(crystals);
     }
 
-
+    function blink (id) {
+        $(id).animate({
+            opacity: "0.5"
+        });
+        $(id).animate({
+            opacity: "1"
+        });
+    }
 
     target = randomNumber(19,120);
     console.log(target)
@@ -69,16 +76,20 @@ $(document).ready(function() {
         }
         else {
             if ($(this).is("#crystalOne")) {
-                total += crystals[0];
+                total += crystals[0];  
+                blink("#crystalOne");
             }
             else if ($(this).is("#crystalTwo")) {
                 total += crystals[1];
+                blink("#crystalTwo");
             }
             else if ($(this).is("#crystalThree")) {
                 total += crystals[2];
+                blink("#crystalThree");
             }
             else {
                 total += crystals[3];
+                blink("#crystalFour");
             }
             console.log(total);
         }
