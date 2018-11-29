@@ -1,0 +1,54 @@
+body {
+    background-image: url(../images/wormz.png);
+    text-align: center;
+}
+
+#title {
+     font-size: x-large;
+     background: darkblue;
+     color: white;
+     font-weight: bolder;
+     padding: 20px 0;
+     margin-bottom: 10px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#directions, #randomSpace, #winLoseSpace, #totalScoreLine, #totalScoreNumber {
+    color: yellow;
+    background: blueviolet;
+    padding: 10px;
+    margin: 10px;
+    border: outset darkviolet 5px;
+}
+
+#randomSpace {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#winLoseSpace {
+
+}
+
+#crystalsSpace {
+
+}
+
+.crystals {
+    float: left;
+    align-content: center;
+    margin: 0 12.5px;
+}
+
+#totalScoreLine {
+    clear: both;
+}
+
+#totalScoreNumber {
+    font-weight: bold;
+    font-size: larger;
+}
